@@ -11,6 +11,12 @@ Route::get('/about', function () {
 Route::get('/rooms', function () {
     return view('rooms');
 });
+Route::get('/facilities', function () {
+    return view('facilities');
+});
+Route::get('/gallery', function () {
+    return view('gallery');
+});
 Route::get('/contact', function () {
     return view('contact');
 });

@@ -35,17 +35,17 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/rooms">Rooms & Suites</a>
-                </li>
-                <li class="nav-item">
+                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="/rooms">Rooms & Suites</a>
+                </li>               
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Facilities</a>
+                    <a class="nav-link" href="/facilities">Facilities</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
