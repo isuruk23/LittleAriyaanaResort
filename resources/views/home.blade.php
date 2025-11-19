@@ -9,7 +9,7 @@
     <!-- Hero Carousel -->
     <div id="heroCarousel" class="carousel slide hero-carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+            <div class="carousel-item active" style="background-image: url('{{ asset('public/images/slider/1.jpg') }}')">
                 <div class="carousel-caption text-center">
                     <h1 class="hero-headline text-white">
                         <span class="underline-gold">Luxury Redefined</span><br>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+            <div class="carousel-item" style="background-image: url('{{ asset('public/images/slider/2.jpg') }}')">
                 <div class="carousel-caption text-center">
                     <h1 class="hero-headline text-white">
                         <span class="underline-gold">Ultimate Relaxation</span><br>
@@ -140,11 +140,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="card room-card">
                         <div class="position-relative">
-                            <div class="room-image" style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                            <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/room1.jpg') }}')"></div>
                             <div class="room-price">$299/night</div>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Deluxe Room</h4>
+                            <h4 class="card-title">Standerd Room</h4>
                             <p class="card-text">Elegantly appointed rooms with premium amenities and stunning city views.</p>
                             <div class="mb-3">
                                 <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> Free WiFi</small>
@@ -283,7 +283,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="card experience-card">
-                        <div class="experience-image" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="experience-image" style="background-image: url('{{ asset('public/images/experiences/experiences2.jpg') }}')"></div>
                         <div class="experience-content">
                             <h4>Private Dining</h4>
                             <p class="text-muted">Exclusive culinary experiences with personalized menus and private chefs.</p>
@@ -293,7 +293,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card experience-card">
-                        <div class="experience-image" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="experience-image" style="background-image: url('{{ asset('public/images/experiences/experiences.jpg') }}')"></div>
                         <div class="experience-content">
                             <h4>Wellness Retreat</h4>
                             <p class="text-muted">Holistic wellness programs including yoga, meditation, and spa treatments.</p>

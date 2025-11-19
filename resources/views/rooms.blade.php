@@ -21,164 +21,6 @@
         </div>
     </section>
 
-    <!-- Featured Rooms Slider -->
-    <section class="rooms-section">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-12">
-                    <h2 class="section-title d-inline-block">Featured Accommodations</h2>
-                    <p class="text-muted">Experience our most sought-after rooms and suites</p>
-                </div>
-            </div>
-            
-            <div id="roomsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row g-4">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card room-slider-card fade-in">
-                                    <div class="position-relative">
-                                        <div class="room-slider-image" style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                                        <div class="room-price">$299/night</div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Deluxe Room</h4>
-                                        <p class="card-text">Elegantly appointed rooms with premium amenities and stunning city views, perfect for both business and leisure travelers.</p>
-                                        <div class="mb-3">
-                                            <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> Free WiFi</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-cup-straw amenity-icon"></i> Mini Bar</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-tv amenity-icon"></i> Smart TV</small>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="text-gold text-decoration-none" data-bs-toggle="modal" data-bs-target="#roomModal">View Details</a>
-                                            <button class="btn btn-gold btn-sm">Book Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card room-slider-card fade-in">
-                                    <div class="position-relative">
-                                        <div class="room-slider-image" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                                        <div class="room-price">$499/night</div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Executive Suite</h4>
-                                        <p class="card-text">Spacious suites with separate living areas, premium amenities, and exclusive access to our private club lounge.</p>
-                                        <div class="mb-3">
-                                            <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> Free WiFi</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-cup-straw amenity-icon"></i> Mini Bar</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-person-check amenity-icon"></i> Concierge</small>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="text-gold text-decoration-none" data-bs-toggle="modal" data-bs-target="#roomModal">View Details</a>
-                                            <button class="btn btn-gold btn-sm">Book Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card room-slider-card fade-in">
-                                    <div class="position-relative">
-                                        <div class="room-slider-image" style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                                        <div class="room-price">$899/night</div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Presidential Suite</h4>
-                                        <p class="card-text">The epitome of luxury with panoramic views, private terrace, and dedicated butler service for the ultimate experience.</p>
-                                        <div class="mb-3">
-                                            <small class="text-muted"><i class="bi bi-hotspot amenity-icon"></i> Private Jacuzzi</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-person-check amenity-icon"></i> Butler Service</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-wine-glass amenity-icon"></i> Premium Bar</small>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="text-gold text-decoration-none" data-bs-toggle="modal" data-bs-target="#roomModal">View Details</a>
-                                            <button class="btn btn-gold btn-sm">Book Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row g-4">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card room-slider-card fade-in">
-                                    <div class="position-relative">
-                                        <div class="room-slider-image" style="background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                                        <div class="room-price">$399/night</div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Junior Suite</h4>
-                                        <p class="card-text">A perfect blend of space and comfort with a separate seating area and enhanced amenities for extended stays.</p>
-                                        <div class="mb-3">
-                                            <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> Free WiFi</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-cup-straw amenity-icon"></i> Mini Bar</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-badge-hd amenity-icon"></i> HD TV</small>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="text-gold text-decoration-none" data-bs-toggle="modal" data-bs-target="#roomModal">View Details</a>
-                                            <button class="btn btn-gold btn-sm">Book Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card room-slider-card fade-in">
-                                    <div class="position-relative">
-                                        <div class="room-slider-image" style="background-image: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                                        <div class="room-price">$599/night</div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Family Suite</h4>
-                                        <p class="card-text">Spacious accommodations designed for families with separate bedrooms and child-friendly amenities.</p>
-                                        <div class="mb-3">
-                                            <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> Free WiFi</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-cup-straw amenity-icon"></i> Mini Bar</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-people amenity-icon"></i> Family Friendly</small>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="text-gold text-decoration-none" data-bs-toggle="modal" data-bs-target="#roomModal">View Details</a>
-                                            <button class="btn btn-gold btn-sm">Book Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card room-slider-card fade-in">
-                                    <div class="position-relative">
-                                        <div class="room-slider-image" style="background-image: url('https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                                        <div class="room-price">$749/night</div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Honeymoon Suite</h4>
-                                        <p class="card-text">Romantic retreat with special amenities, champagne service, and breathtaking views for an unforgettable stay.</p>
-                                        <div class="mb-3">
-                                            <small class="text-muted"><i class="bi bi-flower1 amenity-icon"></i> Romantic Decor</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-wine-glass amenity-icon"></i> Champagne</small>
-                                            <small class="text-muted ms-3"><i class="bi bi-heart amenity-icon"></i> Special Amenities</small>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="#" class="text-gold text-decoration-none" data-bs-toggle="modal" data-bs-target="#roomModal">View Details</a>
-                                            <button class="btn btn-gold btn-sm">Book Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#roomsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#roomsCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
 
     <!-- Room Categories Section -->
     <section class="categories-section">
@@ -192,7 +34,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="category-card fade-in">
-                        <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="category-image" style="background-image: url('{{ asset('public/images/rooms/room1.jpg') }}')"></div>
                         <div class="category-content">
                             <h3 class="text-white">Deluxe Rooms</h3>
                             <p class="text-white">Elegant accommodations with premium amenities and stunning city views.</p>
@@ -282,15 +124,15 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card amenity-card fade-in">
                         <i class="bi bi-thermometer-snow amenity-icon-large"></i>
-                        <h5>Climate Control</h5>
-                        <p class="text-muted">Individual climate control for your perfect room temperature</p>
+                        <h5>Air Conditioning</h5>
+                        <p class="text-muted">Individual air conditioning for your perfect room temperature</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card amenity-card fade-in">
                         <i class="bi bi-safe amenity-icon-large"></i>
-                        <h5>In-Room Safe</h5>
-                        <p class="text-muted">Digital in-room safe for your valuables and important documents</p>
+                        <h5>Bathroom </h5>
+                        <p class="text-muted">Modern, clean, and private with shower or bathtub, fresh towels, and complimentary toiletries.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -397,7 +239,28 @@
   
 @section('scripts')
 
-
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+            
+            // Initial check
+            fadeInOnScroll();
+            
+            // Check on scroll
+            window.addEventListener('scroll', fadeInOnScroll);
+        });
+    </script>
 
 @endsection
 

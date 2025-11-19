@@ -27,16 +27,15 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h2 class="section-title">Our Heritage</h2>
-                    <p class="lead">Founded in 1928 by visionary hotelier Arthur Wellington, Luxury Haven Hotel began as a small boutique establishment with just 12 rooms.</p>
-                    <p>Wellington believed that true luxury wasn't about opulence, but about creating spaces where guests felt completely at home while experiencing the finest comforts.</p>
+                    <!-- <p class="lead">Founded in 1928 by visionary hotelier Arthur Wellington, Luxury Haven Hotel began as a small boutique establishment with just 12 rooms.</p> -->
+                    <p>This accommodation, located in Balapitiya and situated less than 1 km from Ahungalla Beach, provides a serene retreat focused on wellness and comfort. Guests can enjoy a wide array of amenities, including a garden, free private parking, a restaurant, and a full spa and wellness centre featuring a sauna. The staff provides high-quality guest services, with room service available and a reception ready to offer local area information. The units themselves are well-appointed with air conditioning, private bathrooms, bed linen, and kitchen essentials such as a dishwasher, oven, and kettle. For breakfast, guests can choose from à la carte, Full English/Irish, or Asian options, ensuring a satisfying start to the day.</p>
                     
                     <div class="story-highlight">
                         <p>"Our philosophy has always been simple: anticipate needs before they arise, and deliver experiences that exceed expectations."</p>
                         <p class="text-gold">— Arthur Wellington, Founder</p>
                     </div>
                     
-                    <p>Over the decades, we've expanded our facilities while maintaining our commitment to personalized service. Each renovation and addition has been carefully designed to enhance the guest experience while preserving the timeless elegance that defines our brand.</p>
-                    <p>Today, we continue Wellington's legacy by combining traditional hospitality with modern amenities, creating a sanctuary where every detail is thoughtfully considered.</p>
+                    <p>While offering a peaceful coastal location, the property remains conveniently located for exploring the Southern Province of Sri Lanka. It sits approximately 40 km from the historic city of Galle, putting major landmarks like the Galle Fort, Dutch Church Galle, and Galle International Cricket Stadium within a reasonable day trip. The property is also 41 km from the Galle Light House and 40 km from the Galle Fort National Museum. For travelers, Koggala Airport is located 60 km away. Importantly, the establishment was formerly known as the Balapitiya Ayuruveda Villa Dreams Tree, indicating a history rooted in Ayurvedic wellness.</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="overlapping-images">
@@ -256,7 +255,28 @@
   
 @section('scripts')
 
-
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+            
+            // Initial check
+            fadeInOnScroll();
+            
+            // Check on scroll
+            window.addEventListener('scroll', fadeInOnScroll);
+        });
+    </script>
 
 @endsection
 
