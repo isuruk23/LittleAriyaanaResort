@@ -112,10 +112,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h2 class="section-title">A Legacy of Luxury</h2>
-                    <p class="lead">Since 1928, Luxury Haven Hotel has been the preferred destination for discerning travelers seeking an unparalleled experience of elegance and comfort.</p>
-                    <p>Our commitment to excellence is reflected in every detail, from our meticulously designed suites to our world-class amenities and personalized service.</p>
-                    <p>Nestled in the heart of the city, our hotel offers a tranquil retreat where modern sophistication meets timeless elegance.</p>
-                    <button class="btn btn-outline-gold mt-3">Discover Our Story</button>
+                    <p>This accommodation, located in Balapitiya and situated less than 1 km from Ahungalla Beach, provides a serene retreat focused on wellness and comfort. Guests can enjoy a wide array of amenities, including a garden, free private parking, a restaurant, and a full spa and wellness centre featuring a sauna.</p>
+                    <a href="/about" class="btn btn-outline-gold mt-3">Discover Our Story</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="overlapping-images">
@@ -152,7 +150,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="#" class="text-gold text-decoration-none">View Details</a>
-                                <button class="btn btn-gold btn-sm">Book Now</button>
+                                <button class="btn btn-gold btn-sm"  data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -172,7 +170,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="#" class="text-gold text-decoration-none">View Details</a>
-                                <button class="btn btn-gold btn-sm">Book Now</button>
+                                <button class="btn btn-gold btn-sm"  data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -192,7 +190,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="#" class="text-gold text-decoration-none">View Details</a>
-                                <button class="btn btn-gold btn-sm">Book Now</button>
+                                <button class="btn btn-gold btn-sm"  data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -439,7 +437,54 @@
 @endsection
   
 @section('scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
 
+    const form = document.getElementById('bookingForm');
+    const successAlert = document.getElementById('bookingSuccess');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                'Accept': 'application/json',
+            },
+            body: formData
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.status) {
+                // Show success message
+                successAlert.textContent = data.message;
+                successAlert.classList.remove('d-none');
+
+                // Reset form
+                form.reset();
+
+                // Optional: Close modal after 2s
+                setTimeout(() => {
+                    var modalEl = document.getElementById('bookingModal');
+                    var modal = bootstrap.Modal.getInstance(modalEl);
+                    modal.hide();
+
+                    successAlert.classList.add('d-none');
+                }, 2000);
+            }
+        })
+        .catch(err => {
+            console.log(err);
+            alert('Something went wrong! Please try again.');
+        });
+    });
+
+});
+</script>
 
 
 @endsection

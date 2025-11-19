@@ -54,7 +54,7 @@
                             <p class="text-white">Spacious suites with separate living areas and exclusive lounge access.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-gold fw-bold">From $499/night</span>
-                                <button class="btn btn-outline-gold btn-sm">Explore</button>
+                                <button class="btn btn-outline-gold btn-sm" >Explore</button>
                             </div>
                         </div>
                     </div>

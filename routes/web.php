@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookingController;
+
 
 Route::get('/', function () {
     return view('home');
@@ -20,3 +22,5 @@ Route::get('/gallery', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::post('/booking/store', [BookingController::class, 'store'])->name('booking.store');

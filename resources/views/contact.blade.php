@@ -36,7 +36,7 @@
                         <i class="bi bi-telephone contact-icon"></i>
                         <h4>Phone</h4>
                         <p class="text-muted">Speak directly with our concierge team</p>
-                        <p class="text-gold fw-bold">+1 (555) 123-4567</p>
+                        <p class="text-gold fw-bold">+94 760332524</p>
                         <small class="text-muted">Available 24/7</small>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                         <i class="bi bi-envelope contact-icon"></i>
                         <h4>Email</h4>
                         <p class="text-muted">Send us your inquiries and requests</p>
-                        <p class="text-gold fw-bold">reservations@luxuryhaven.com</p>
+                        <p class="text-gold fw-bold">reservations@littleariyaanaresort.lk</p>
                         <small class="text-muted">Response within 2 hours</small>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         <i class="bi bi-whatsapp contact-icon"></i>
                         <h4>WhatsApp</h4>
                         <p class="text-muted">Quick messaging for immediate assistance</p>
-                        <p class="text-gold fw-bold">+1 (555) 123-4567</p>
+                        <p class="text-gold fw-bold">+94 760332524</p>
                         <small class="text-muted">Instant responses</small>
                     </div>
                 </div>
@@ -62,9 +62,10 @@
                     <div class="card contact-card fade-in">
                         <i class="bi bi-geo-alt contact-icon"></i>
                         <h4>Address</h4>
-                        <p class="text-muted">Visit our stunning property</p>
-                        <p class="text-gold fw-bold">123 Luxury Avenue<br>City Center, 10001</p>
-                        <small class="text-muted">Valet parking available</small>
+                        <p class="text-muted">Little Ariyaana Resort </p>
+                        <p class="text-gold fw-bold">Abagahapitiya temple rd,<br>
+Pathegama, <br>Balapititiya</p>
+                        <small class="text-muted"> parking available</small>
                     </div>
                 </div>
             </div>
@@ -183,9 +184,9 @@
                     
                     <div class="mb-4">
                         <h5 class="mb-3">Hotel Address</h5>
-                        <p><i class="bi bi-geo-alt contact-icon-small"></i> 123 Luxury Avenue, City Center, 10001</p>
-                        <p><i class="bi bi-telephone contact-icon-small"></i> +1 (555) 123-4567</p>
-                        <p><i class="bi bi-envelope contact-icon-small"></i> info@luxuryhaven.com</p>
+                        <p><i class="bi bi-geo-alt contact-icon-small"></i>  Little Ariyaana Resort, Abagahapitiya temple rd, Pathegama, Balapititiya</p>
+                        <p><i class="bi bi-telephone contact-icon-small"></i> +94 760332524</p>
+                        <p><i class="bi bi-envelope contact-icon-small"></i> info@littleariyaanaresort.lk</p>
                     </div>
                     
                     <div class="mb-4">
