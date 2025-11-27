@@ -137,7 +137,7 @@
     </section>
 
     <!-- Timeline Section -->
-    <section class="timeline-section">
+    <!-- <section class="timeline-section">
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col-12">
@@ -190,7 +190,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Testimonials Section -->
     <section class="testimonial-section">

@@ -78,8 +78,8 @@ public function book(Request $request)
         'email' => $request->email,
         'phone' => $request->phone,
         'room_no' => $room_id,
-        'check_in' => $check_in_date,
-        'check_out' => $check_out_date,
+        'check_in' => $check_in,
+        'check_out' => $check_out,
         'status' => 0,
     ]);
 

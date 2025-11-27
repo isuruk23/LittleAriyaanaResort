@@ -126,7 +126,7 @@
     </section>
 
     <!-- Featured Experiences -->
-    <section class="experiences-section">
+    <!-- <section class="experiences-section">
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col-12">
@@ -193,7 +193,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Amenities Icons Section -->
     <section class="amenities-section">
@@ -226,13 +226,7 @@
                         <p class="text-muted">Round-the-clock personalized concierge service</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card amenity-card fade-in">
-                        <i class="bi bi-umbrella amenity-icon-large"></i>
-                        <h5>Pool & Beach</h5>
-                        <p class="text-muted">Infinity pool and private beach access</p>
-                    </div>
-                </div>
+               
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card amenity-card fade-in">
                         <i class="bi bi-egg-fried amenity-icon-large"></i>
@@ -249,18 +243,18 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card amenity-card fade-in">
-                        <i class="bi bi-person-arms-up amenity-icon-large"></i>
+                        <i class="bi bi-person amenity-icon-large"></i>
                         <h5>Fitness Center</h5>
                         <p class="text-muted">State-of-the-art gym with personal trainers</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card amenity-card fade-in">
                         <i class="bi bi-calendar-event amenity-icon-large"></i>
                         <h5>Event Spaces</h5>
                         <p class="text-muted">Versatile venues for meetings and celebrations</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
