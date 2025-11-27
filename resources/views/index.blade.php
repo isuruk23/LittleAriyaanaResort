@@ -150,7 +150,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="#" class="text-gold text-decoration-none">View Details</a>
-                                <button data-room="1" class="btn btn-gold btn-sm roomBtn" >Book Now</button>
+                                <button class="btn btn-gold btn-sm"  data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="#" class="text-gold text-decoration-none">View Details</a>
-                                <button  data-room="2" class="btn btn-gold btn-sm roomBtn" >Book Now</button>
+                                <button class="btn btn-gold btn-sm"  data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="#" class="text-gold text-decoration-none">View Details</a>
-                                <button data-room="3" class="btn btn-gold btn-sm roomBtn" >Book Now</button>
+                                <button class="btn btn-gold btn-sm"  data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -439,15 +439,6 @@
 @section('scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-    $('.roomBtn').click(function () {
-            $('#bookingModal').modal('show');
-            room = $(this).attr('data-room');
-            $('#room_no').val(room);
-           
-    });
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
 
     const form = document.getElementById('bookingForm');

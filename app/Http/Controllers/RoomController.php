@@ -1,0 +1,91 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Room;
+use Illuminate\Http\Request;
+
+class RoomController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        $rooms = Room::latest()->get();
+        return view('admin.rooms.index', compact('rooms'));
+    }
+
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+        ]);
+
+        if($request->room_id) {
+            // Update existing room
+            // dd($request);
+            $room = Room::findOrFail($request->room_id);
+            $room->update([
+                'name' => $request->name,
+                'is_active' => $request->has('is_active') ? 1 : 0,
+            ]);
+            return redirect()->back()->with('success','Room updated successfully');
+        }
+
+        // Create new room
+        Room::create([
+            'name' => $request->name,
+            'is_active' => $request->is_active ? 1 : 0,
+        ]);
+
+        return redirect()->back()->with('success','Room added successfully');
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(Room $room)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(Room $room)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, $id)
+    {
+       
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy($id)
+    {
+        $room = Room::findOrFail($id);
+        $room->delete();
+
+        return redirect()->back()->with('success', 'Room deleted successfully');
+    }
+}

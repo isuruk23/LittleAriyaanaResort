@@ -91,8 +91,7 @@
 
             <!-- RIGHT SIDE: FORM -->
             <div class="col-md-7">
-                <div id="bookingSuccess" class="alert alert-success d-none mt-2"></div>
-           <form id="bookingForm" action="{{ route('booking.store') }}" method="POST">
+           <form id="bookingForm" action="{{ route('booking.book') }}" method="POST">
                 @csrf
 
                 <div class="modal-header">
@@ -130,10 +129,15 @@
                 </div>
 
                 <div class="modal-footer">
+                <input name="room_no" id="room_no" type="hidden">
+
                 <button type="submit" class="btn-submit">Confirm Booking</button>
                 </div>
 
             </form>
+                <div id="bookingSuccess" class="alert alert-success d-none mt-2"></div>
+                <div id="bookingDanger" class="alert alert-danger d-none mt-2"></div>
+
             </div>
         </div>
         </div>
