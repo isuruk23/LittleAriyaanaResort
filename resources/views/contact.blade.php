@@ -192,10 +192,13 @@ Pathegama, <br>Balapititiya</p>
                     <div class="mb-4">
                         <h5 class="mb-3">Getting Here</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><i class="bi bi-arrow-right contact-icon-small"></i> 15 minutes from International Airport</li>
-                            <li class="mb-2"><i class="bi bi-arrow-right contact-icon-small"></i> 5 minutes from Central Station</li>
-                            <li class="mb-2"><i class="bi bi-arrow-right contact-icon-small"></i> Complimentary valet parking</li>
-                            <li class="mb-2"><i class="bi bi-arrow-right contact-icon-small"></i> Limousine service available</li>
+                            <li class="mb-2"><i class="bi bi-arrow-right contact-icon-small"></i> Animal Protection Organization - 0.2 km</li>
+                            <li class="mb-2"><i class="bi bi-arrow-right contact-icon-small"></i> Balapitiya Beach - 0.4km</li>
+                            <li class="mb-2"><i class="bi bi-arrow-right contact-icon-small"></i> Galle Lighthouse - 41 km</li>
+                            <li class="mb-2"><i class="bi bi-arrow-right contact-icon-small"></i> Galle Fort - 41 km</li>
+                            <li class="mb-2"><i class="bi bi-arrow-right contact-icon-small"></i> Dutch Church Galle - 40 km</li>
+                            <li class="mb-2"><i class="bi bi-arrow-right contact-icon-small"></i> Galle International Cricket Stadium - 40 km</li>
+                        
                         </ul>
                     </div>
                     
@@ -223,8 +226,8 @@ Pathegama, <br>Balapititiya</p>
         <div class="container cta-content text-center">
             <h2 class="text-white mb-4"><span class="underline-gold">Ready to Experience Luxury?</span></h2>
             <p class="lead text-white mb-5">Book your stay at Luxury Haven Hotel and discover the epitome of elegance and comfort.</p>
-            <button class="btn btn-gold btn-lg me-3">Book Now</button>
-            <button class="btn btn-outline-gold btn-lg">View Rooms</button>
+            <!-- <button class="btn btn-gold btn-lg me-3">Book Now</button> -->
+            <a href="/rooms" class="btn btn-outline-gold btn-lg">View Rooms</a>
         </div>
     </section>
 

@@ -139,6 +139,103 @@
                         <p class="mb-0">Personalized wellness programs</p>
                     </div>
                 </div>
+                
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/13.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/14.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/15.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/16.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/17.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/18.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/19.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/20.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/21.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/22.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/23.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
+
+                 <div class="gallery-item masonry-item-small" data-category="spa">
+                    <img src="{{ asset('public/images/gallery/24.jpg') }}" alt="Wellness Retreat" class="gallery-image" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                    <div class="gallery-caption">
+                        <h5>Wellness Retreat</h5>
+                        <p class="mb-0">Personalized wellness programs</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

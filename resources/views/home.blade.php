@@ -9,7 +9,7 @@
     <!-- Hero Carousel -->
     <div id="heroCarousel" class="carousel slide hero-carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('{{ asset('public/images/slider/1.jpg') }}')">
+            <div class="carousel-item active" style="background-image: url('{{ asset('public/images/slider/bg1.jpg') }}')">
                 <div class="carousel-caption text-center">
                     <h1 class="hero-headline text-white">
                         <span class="underline-gold">Luxury Redefined</span><br>
@@ -56,7 +56,54 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="background-image: url('{{ asset('public/images/slider/2.jpg') }}')">
+            <div class="carousel-item" style="background-image: url('{{ asset('public/images/slider/bg2.jpg') }}')">
+                <div class="carousel-caption text-center">
+                    <h1 class="hero-headline text-white">
+                        <span class="underline-gold">Ultimate Relaxation</span><br>
+                        Indulge in World-Class Spa & Wellness
+                    </h1>
+                    <p class="lead text-white mb-4">Rejuvenate your senses with our exclusive treatments and wellness programs.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <button class="btn btn-gold">View Spa Services</button>
+                        <button class="btn btn-outline-gold">Book Treatment</button>
+                    </div>
+                    
+                    <!-- Booking Bar -->
+                    <div class="booking-bar">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-md-3">
+                                <label class="form-label">Check In</label>
+                                <input type="date" class="form-control booking-input">
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Check Out</label>
+                                <input type="date" class="form-control booking-input">
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label">Guests</label>
+                                <select class="form-select booking-input">
+                                    <option>1 Guest</option>
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4+ Guests</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label">Rooms</label>
+                                <select class="form-select booking-input">
+                                    <option>1 Room</option>
+                                    <option>2 Rooms</option>
+                                    <option>3 Rooms</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2 d-grid">
+                                <button class="btn btn-gold mt-4">Check Availability</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('{{ asset('public/images/slider/bg3.jpg') }}')">
                 <div class="carousel-caption text-center">
                     <h1 class="hero-headline text-white">
                         <span class="underline-gold">Ultimate Relaxation</span><br>
@@ -138,7 +185,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="card room-card">
                         <div class="position-relative">
-                            <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/room1.jpg') }}')"></div>
+                            <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room1.jpg') }}')"></div>
                             <div class="room-price">$299/night</div>
                         </div>
                         <div class="card-body">
@@ -158,11 +205,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="card room-card">
                         <div class="position-relative">
-                            <div class="room-image" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                            <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room2.jpg') }}')"></div>
                             <div class="room-price">$499/night</div>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Executive Suite</h4>
+                            <h4 class="card-title">Standerd Room</h4>
                             <p class="card-text">Spacious suites with separate living areas and exclusive access to our club lounge.</p>
                             <div class="mb-3">
                                 <small class="text-muted"><i class="bi bi-tv amenity-icon"></i> Smart TV</small>
@@ -178,11 +225,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="card room-card">
                         <div class="position-relative">
-                            <div class="room-image" style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                            <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room3.jpg') }}')"></div>
                             <div class="room-price">$899/night</div>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Presidential Suite</h4>
+                            <h4 class="card-title">Standerd Room</h4>
                             <p class="card-text">The epitome of luxury with panoramic views, private terrace, and dedicated butler service.</p>
                             <div class="mb-3">
                                 <small class="text-muted"><i class="bi bi-hotspot amenity-icon"></i> Private Jacuzzi</small>
@@ -275,7 +322,7 @@
             <div class="row text-center mb-5">
                 <div class="col-12">
                     <h2 class="section-title d-inline-block">Exclusive Experiences</h2>
-                    <p class="text-muted">Curated activities and services for the ultimate luxury stay</p>
+                    <p>Curated activities and services for the ultimate luxury stay</p>
                 </div>
             </div>
             <div class="row g-4">
@@ -284,8 +331,8 @@
                         <div class="experience-image" style="background-image: url('{{ asset('public/images/experiences/experiences2.jpg') }}')"></div>
                         <div class="experience-content">
                             <h4>Private Dining</h4>
-                            <p class="text-muted">Exclusive culinary experiences with personalized menus and private chefs.</p>
-                            <a href="#" class="text-gold text-decoration-none">Learn More</a>
+                            <p>Exclusive culinary experiences with personalized menus and private chefs.</p>
+                            <!-- <a href="#" class="text-gold text-decoration-none">Learn More</a> -->
                         </div>
                     </div>
                 </div>
@@ -294,18 +341,18 @@
                         <div class="experience-image" style="background-image: url('{{ asset('public/images/experiences/experiences.jpg') }}')"></div>
                         <div class="experience-content">
                             <h4>Wellness Retreat</h4>
-                            <p class="text-muted">Holistic wellness programs including yoga, meditation, and spa treatments.</p>
-                            <a href="#" class="text-gold text-decoration-none">Learn More</a>
+                            <p>Holistic wellness programs including yoga, meditation, and spa treatments.</p>
+                            <!-- <a href="#" class="text-gold text-decoration-none">Learn More</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card experience-card">
-                        <div class="experience-image" style="background-image: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="experience-image" style="background-image: url('{{ asset('public/images/experiences/little_ariyaanacity_tours.jpg') }}')"></div>
                         <div class="experience-content">
                             <h4>City Tours</h4>
-                            <p class="text-muted">Guided tours to the city's most exclusive attractions and hidden gems.</p>
-                            <a href="#" class="text-gold text-decoration-none">Learn More</a>
+                            <p>Guided tours to the city's most exclusive attractions and hidden gems.</p>
+                            <!-- <a href="#" class="text-gold text-decoration-none">Learn More</a> -->
                         </div>
                     </div>
                 </div>
@@ -402,13 +449,15 @@
                     
                     <h5 class="mb-3">Nearby Attractions</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> City Art Museum - 5 min walk</li>
-                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Central Park - 10 min walk</li>
-                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Luxury Shopping District - 8 min walk</li>
-                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Financial District - 15 min drive</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Animal Protection Organization - 0.2 km</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Balapitiya Beach - 0.4km</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Galle Lighthouse - 41 km</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Galle Fort - 41 km</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Dutch Church Galle - 40 km</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Galle International Cricket Stadium - 40 km</li>
                     </ul>
                     
-                    <button class="btn btn-gold mt-3">Get Directions</button>
+                    <!-- <button class="btn btn-gold mt-3">Get Directions</button> -->
                 </div>
                 <div class="col-lg-6">
                     <div class="map-container">
@@ -431,7 +480,7 @@
         <div class="container cta-content text-center">
             <h2 class="text-white mb-4">Ready for an Unforgettable Experience?</h2>
             <p class="lead text-white mb-5">Book your stay at Luxury Haven and discover the epitome of elegance and comfort.</p>
-            <button class="btn btn-gold btn-lg">Book Your Stay</button>
+            <a href="/rooms" class="btn btn-gold btn-lg">Book Your Stay</a>
         </div>
     </section>
 @endsection

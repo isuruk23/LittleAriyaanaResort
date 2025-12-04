@@ -34,13 +34,13 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="category-card fade-in">
-                        <div class="category-image" style="background-image: url('{{ asset('public/images/rooms/room1.jpg') }}')"></div>
+                        <div class="category-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room1.jpg') }}')"></div>
                         <div class="category-content">
-                            <h3 class="text-white">Deluxe Rooms</h3>
+                            <h3 class="text-white">Standerd Room</h3>
                             <p class="text-white">Elegant accommodations with premium amenities and stunning city views.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-gold fw-bold">From $299/night</span>
-                                <button class="btn btn-outline-gold btn-sm">Explore</button>
+                                  <button data-room="1" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
                     </div>
@@ -48,44 +48,31 @@
                 <div class="col-lg-6">
                     <div class="category-card fade-in">
                         <div class="category-badge">Most Popular</div>
-                        <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="category-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room2.jpg') }}')"></div>
                         <div class="category-content">
-                            <h3 class="text-white">Executive Suites</h3>
+                            <h3 class="text-white">Standerd Room</h3>
                             <p class="text-white">Spacious suites with separate living areas and exclusive lounge access.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-gold fw-bold">From $499/night</span>
-                                <button class="btn btn-outline-gold btn-sm" >Explore</button>
+                                <button data-room="2" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="category-card fade-in">
-                        <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="category-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room3.jpg') }}')"></div>
                         <div class="category-content">
-                            <h3 class="text-white">Presidential Suite</h3>
+                            <h3 class="text-white">Standerd Room</h3>
                             <p class="text-white">The ultimate luxury experience with panoramic views and butler service.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-gold fw-bold">From $899/night</span>
-                                <button class="btn btn-outline-gold btn-sm">Explore</button>
+                                  <button data-room="3" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="category-card fade-in">
-                        <div class="category-badge">Special</div>
-                        <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                        <div class="category-content">
-                            <h3 class="text-white">Honeymoon Suite</h3>
-                            <p class="text-white">Romantic retreat with special amenities for an unforgettable experience.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="text-gold fw-bold">From $749/night</span>
-                                <button class="btn btn-outline-gold btn-sm">Explore</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -161,7 +148,7 @@
     </section>
 
     <!-- Offers Section -->
-    <section class="offers-section">
+    <!-- <section class="offers-section">
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col-12">
@@ -223,7 +210,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- CTA Section -->
     <section class="cta-section">
@@ -238,6 +225,7 @@
 @endsection
   
 @section('scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -259,6 +247,62 @@
             
             // Check on scroll
             window.addEventListener('scroll', fadeInOnScroll);
+        });
+
+
+         $('.roomBtn').click(function () {
+                    $('#bookingModal').modal('show');
+                    room = $(this).attr('data-room');
+                    $('#room_no').val(room);
+                
+            });
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const form = document.getElementById('bookingForm');
+            const successAlert = document.getElementById('bookingSuccess');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const formData = new FormData(form);
+
+                fetch(form.action, {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                        'Accept': 'application/json',
+                    },
+                    body: formData
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.status) {
+                        // Show success message
+                        successAlert.textContent = data.message;
+                        successAlert.classList.remove('d-none');
+
+                        // Reset form
+                        form.reset();
+
+                        // Optional: Close modal after 2s
+                        setTimeout(() => {
+                            var modalEl = document.getElementById('bookingModal');
+                            var modal = bootstrap.Modal.getInstance(modalEl);
+                            modal.hide();
+
+                            successAlert.classList.add('d-none');
+                        }, 2000);
+                    }
+                })
+                .catch(err => {
+                    console.log(err);
+                    alert('Something went wrong! Please try again.');
+                });
+            });
+
         });
     </script>
 
