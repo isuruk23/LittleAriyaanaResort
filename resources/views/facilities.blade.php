@@ -31,25 +31,15 @@
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card facility-card fade-in">
-                        <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                        <div class="card-body p-4">
-                            <i class="bi bi-egg-fried facility-icon"></i>
-                            <h4 class="card-title">Gourmet Dining</h4>
-                            <p class="card-text">Experience culinary excellence at our award-winning restaurants featuring world-renowned chefs and locally sourced ingredients.</p>
-                            <a href="#" class="text-gold text-decoration-none">Explore Menus</a>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-lg-4 col-md-6">
                     <div class="card facility-card fade-in">
                         <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
                         <div class="card-body p-4">
                             <i class="bi bi-droplet facility-icon"></i>
                             <h4 class="card-title">Luxury Spa</h4>
-                            <p class="card-text">Rejuvenate your senses with our holistic treatments, thermal experiences, and personalized wellness programs.</p>
-                            <a href="#" class="text-gold text-decoration-none">View Treatments</a>
+                            <p class="card-text">Escape into pure serenity at our luxury spa, featuring aromatherapy massages, revitalizing facials, and calming rituals designed to relax, refresh, and renew.</p>
+                            <!-- <a href="#" class="text-gold text-decoration-none">View Treatments</a> -->
                         </div>
                     </div>
                 </div>
@@ -57,46 +47,25 @@
                     <div class="card facility-card fade-in">
                         <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
                         <div class="card-body p-4">
-                            <i class="bi bi-person-arms-up facility-icon"></i>
+                            <i class="bi bi-heart-pulse facility-icon"></i>
                             <h4 class="card-title">Fitness Center</h4>
-                            <p class="card-text">Maintain your wellness routine with our state-of-the-art equipment, personal training, and group fitness classes.</p>
-                            <a href="#" class="text-gold text-decoration-none">View Schedule</a>
+                            <p class="card-text">Stay active during your stay at our state-of-the-art fitness center, featuring modern cardio machines, strength-training equipment, and a refreshing atmosphere designed for an energizing workout experience.</p>
+                            <!-- <a href="#" class="text-gold text-decoration-none">View Schedule</a> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card facility-card fade-in">
-                        <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="facility-image" style="background-image: url('{{ asset('public/images/bath-tub.jpg') }}')"></div>
                         <div class="card-body p-4">
                             <i class="bi bi-water facility-icon"></i>
-                            <h4 class="card-title">Infinity Pool</h4>
-                            <p class="card-text">Enjoy breathtaking views from our rooftop infinity pool, complete with private cabanas and poolside service.</p>
-                            <a href="#" class="text-gold text-decoration-none">View Gallery</a>
+                            <h4 class="card-title">Bath Tab</h4>
+                            <p class="card-text">Unwind in our elegant bathtub designed for total relaxation. Enjoy a warm soak with premium bath amenities, plush towels, and a serene atmosphere that turns your bathroom into a private spa escape.</p>
+                            <!-- <a href="#" class="text-gold text-decoration-none">View Gallery</a> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card facility-card fade-in">
-                        <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                        <div class="card-body p-4">
-                            <i class="bi bi-cup-straw facility-icon"></i>
-                            <h4 class="card-title">Lounge & Bar</h4>
-                            <p class="card-text">Unwind in our elegant lounge with handcrafted cocktails, premium spirits, and live entertainment.</p>
-                            <a href="#" class="text-gold text-decoration-none">View Menu</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card facility-card fade-in">
-                        <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                        <div class="card-body p-4">
-                            <i class="bi bi-calendar-event facility-icon"></i>
-                            <h4 class="card-title">Event Spaces</h4>
-                            <p class="card-text">Host unforgettable events in our versatile venues with dedicated event planners and gourmet catering.</p>
-                            <a href="#" class="text-gold text-decoration-none">Plan Event</a>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </section>
@@ -114,10 +83,10 @@
                 <div class="col-12">
                     <div id="facilityGallery" class="carousel slide gallery-carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
                         <div class="carousel-inner">
-                            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
-                            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
+                            <!-- <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div> -->
+                            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
                             <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
-                            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
+                            <div class="carousel-item" style="background-image: url('{{ asset('public/images/bath-tub.jpg') }}')"></div>
                         </div>
                     </div>
                 </div>

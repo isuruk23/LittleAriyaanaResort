@@ -403,6 +403,8 @@
                     <h5 class="mb-3">Nearby Attractions</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> City Art Museum - 5 min walk</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> City Art Museum - 5 min walk</li>
+                        <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> City Art Museum - 5 min walk</li>
                         <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Central Park - 10 min walk</li>
                         <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Luxury Shopping District - 8 min walk</li>
                         <li class="mb-2"><i class="bi bi-arrow-right contact-icon"></i> Financial District - 15 min drive</li>
