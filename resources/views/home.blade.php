@@ -443,7 +443,7 @@
                     
                     <div class="mb-4">
                         <p><i class="bi bi-geo-alt contact-icon"></i>Abagahapitiya temple rd, Pathegama, Balapititiya</p>
-                        <p><i class="bi bi-telephone contact-icon"></i> +94 760332524</p>
+                        <p><i class="bi bi-telephone contact-icon"></i> +94 701803421</p>
                         <p><i class="bi bi-envelope contact-icon"></i> reservations@littleariyaanaresort.lk</p>
                     </div>
                     
