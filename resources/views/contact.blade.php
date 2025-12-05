@@ -36,7 +36,7 @@
                         <i class="bi bi-telephone contact-icon"></i>
                         <h4>Phone</h4>
                         <p class="text-muted">Speak directly with our concierge team</p>
-                        <p class="text-gold fw-bold">+94 760332524</p>
+                        <p class="text-gold fw-bold">+94 701803421</p>
                         <small class="text-muted">Available 24/7</small>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         <i class="bi bi-whatsapp contact-icon"></i>
                         <h4>WhatsApp</h4>
                         <p class="text-muted">Quick messaging for immediate assistance</p>
-                        <p class="text-gold fw-bold">+94 760332524</p>
+                        <p class="text-gold fw-bold">+94 701803421</p>
                         <small class="text-muted">Instant responses</small>
                     </div>
                 </div>
@@ -185,7 +185,7 @@ Pathegama, <br>Balapititiya</p>
                     <div class="mb-4">
                         <h5 class="mb-3">Hotel Address</h5>
                         <p><i class="bi bi-geo-alt contact-icon-small"></i>  Little Ariyaana Resort, Abagahapitiya temple rd, Pathegama, Balapititiya</p>
-                        <p><i class="bi bi-telephone contact-icon-small"></i> +94 760332524</p>
+                        <p><i class="bi bi-telephone contact-icon-small"></i> +94 701803421</p>
                         <p><i class="bi bi-envelope contact-icon-small"></i> info@littleariyaanaresort.lk</p>
                     </div>
                     
