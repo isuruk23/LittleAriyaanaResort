@@ -185,7 +185,7 @@ Pathegama, <br>Balapititiya</p>
                     <div class="mb-4">
                         <h5 class="mb-3">Hotel Address</h5>
                         <p><i class="bi bi-geo-alt contact-icon-small"></i>  Little Ariyaana Resort, Abagahapitiya temple rd, Pathegama, Balapititiya</p>
-                        <p><i class="bi bi-telephone contact-icon-small"></i> +94 701803421</p>
+                        <p><i class="bi bi-telephone contact-icon-small"></i> +94 701803421 | +94 912264400</p>
                         <p><i class="bi bi-envelope contact-icon-small"></i> info@littleariyaanaresort.lk</p>
                     </div>
                     
@@ -209,9 +209,7 @@ Pathegama, <br>Balapititiya</p>
                         <!-- Placeholder for map - in a real implementation, you would embed a Google Map or similar -->
                         <div style="height: 450px; background-color: #eee; display: flex; align-items: center; justify-content: center;">
                             <div class="text-center">
-                                <i class="bi bi-map" style="font-size: 3rem; color: #aaa;"></i>
-                                <p class="mt-2">Interactive Map</p>
-                                <small class="text-muted">123 Luxury Avenue, City Center</small>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7931.450758704008!2d80.03506469967765!3d6.299771036350433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e9!4m3!3m2!1d6.8593549!2d79.8638084!4m5!1s0x3ae181f829f1723b%3A0xc6fe9b019f809b93!2sDream&#39;s%20Tree%20Ayurveda%20Villa%20Ahungalla!3m2!1d6.299994!2d80.042703!5e0!3m2!1sen!2slk!4v1765159010354!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
