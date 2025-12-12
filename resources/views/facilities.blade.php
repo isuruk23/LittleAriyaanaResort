@@ -221,14 +221,14 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card amenity-card fade-in">
                         <i class="bi bi-wifi amenity-icon-large"></i>
-                        <h5>High-Speed WiFi</h5>
+                        <h5>WiFi</h5>
                         <p class="text-muted">Complimentary high-speed internet throughout the hotel</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card amenity-card fade-in">
                         <i class="bi bi-car-front amenity-icon-large"></i>
-                        <h5>Valet Parking</h5>
+                        <h5>Parking</h5>
                         <p class="text-muted">Complimentary valet service for all hotel guests</p>
                     </div>
                 </div>
@@ -243,8 +243,8 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="card amenity-card fade-in">
                         <i class="bi bi-egg-fried amenity-icon-large"></i>
-                        <h5>Gourmet Dining</h5>
-                        <p class="text-muted">Multiple award-winning restaurants and bars</p>
+                        <h5>Gourmet Breakfast </h5>
+                        <p class="text-muted">A fresh, flavorful start with gourmet dishes.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
