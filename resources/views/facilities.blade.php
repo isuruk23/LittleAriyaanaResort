@@ -37,8 +37,8 @@
                         <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
                         <div class="card-body p-4">
                             <i class="bi bi-droplet facility-icon"></i>
-                            <h4 class="card-title">Luxury Spa</h4>
-                            <p class="card-text">Escape into pure serenity at our luxury spa, featuring aromatherapy massages, revitalizing facials, and calming rituals designed to relax, refresh, and renew.</p>
+                            <h4 class="card-title">Wellness</h4>
+                            <p class="card-text">Escape into pure serenity at our luxury spa, where aromatherapy massages, revitalizing facials, and calming wellness rituals melt your stress away. Indulge in soothing therapies, rejuvenating spa baths, and holistic treatments crafted to relax, refresh, and renew your body and mind.</p>
                             <!-- <a href="#" class="text-gold text-decoration-none">View Treatments</a> -->
                         </div>
                     </div>
@@ -59,8 +59,52 @@
                         <div class="facility-image" style="background-image: url('{{ asset('public/images/bath-tub.jpg') }}')"></div>
                         <div class="card-body p-4">
                             <i class="bi bi-water facility-icon"></i>
-                            <h4 class="card-title">Bath Tab</h4>
+                            <h4 class="card-title">Mini Pool</h4>
                             <p class="card-text">Unwind in our elegant bathtub designed for total relaxation. Enjoy a warm soak with premium bath amenities, plush towels, and a serene atmosphere that turns your bathroom into a private spa escape.</p>
+                            <!-- <a href="#" class="text-gold text-decoration-none">View Gallery</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card facility-card fade-in">
+                        <div class="facility-image" style="background-image: url('{{ asset('public/images/facilities/kitchen.jpg') }}')"></div>
+                        <div class="card-body p-4">
+                            <i class="bi bi-cup-hot facility-icon"></i>
+                            <h4 class="card-title">Kitchen Amenities</h4>
+                            <p class="card-text">Enjoy convenient access to our shared kitchen facilities, complete with an electric kettle, dining table, tea and coffee options, sugar packets, and complimentary water bottles—everything you need for a comfortable and homely stay.</p>
+                            <!-- <a href="#" class="text-gold text-decoration-none">View Gallery</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card facility-card fade-in">
+                        <div class="facility-image" style="background-image: url('{{ asset('public/images/facilities/garden.jpg') }}')"></div>
+                        <div class="card-body p-4">
+                            <i class="bi bi-tree-fill facility-icon"></i>
+                            <h4 class="card-title">Garden Serenity</h4>
+                            <p class="card-text">Enjoy the beauty of nature with uninterrupted views of our landscaped gardens, designed to bring peace, freshness, and relaxation to your stay.</p>
+                            <!-- <a href="#" class="text-gold text-decoration-none">View Gallery</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card facility-card fade-in">
+                        <div class="facility-image" style="background-image: url('{{ asset('public/images/facilities/wifi.jpg') }}')"></div>
+                        <div class="card-body p-4">
+                            <i class="bi bi-router-fill facility-icon"></i>
+                            <h4 class="card-title">Wi-Fi</h4>
+                            <p class="card-text">Stay connected with complimentary high-speed Wi-Fi available throughout your room and property for smooth browsing, streaming, and working.</p>
+                            <!-- <a href="#" class="text-gold text-decoration-none">View Gallery</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card facility-card fade-in">
+                        <div class="facility-image" style="background-image: url('{{ asset('public/images/facilities/parking.jpg') }}')"></div>
+                        <div class="card-body p-4">
+                            <i class="bi bi-car-front facility-icon"></i>
+                            <h4 class="card-title">Free Parking</h4>
+                            <p class="card-text">Enjoy hassle-free travel with complimentary on-site parking, offering safe and accessible spaces just steps from your accommodation.</p>
                             <!-- <a href="#" class="text-gold text-decoration-none">View Gallery</a> -->
                         </div>
                     </div>

@@ -76,15 +76,17 @@
         <div class="row g-0">
             <!-- LEFT SIDE: ROOM IMAGE + DETAILS -->
             <div class="col-md-5 room-left">
-                <img src="{{ asset('public/images/rooms/room1.jpg') }}" class="room-img" alt="Room Image">
+                <img src="{{ asset('public/images/rooms/standerd_room1.jpg') }}" class="room-img" alt="Room Image">
 
                 <div class="room-info">
                     <h4 class="room-title">Deluxe King Room</h4>
                     <p class="room-desc">A luxurious stay with premium amenities, balcony view & king-size bed.</p>
                     <ul class="room-list">
+                        <li>✔ King Size Bed</li>
                         <li>✔ 2 Guests</li>
                         <li>✔ Free Wi-Fi</li>
                         <li>✔ Air Conditioned</li>
+                        <li>✔ Garden View</li>
                     </ul>
                 </div>
             </div>

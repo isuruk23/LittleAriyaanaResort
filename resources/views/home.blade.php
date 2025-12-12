@@ -186,7 +186,7 @@
                     <div class="card room-card">
                         <div class="position-relative">
                             <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room1.jpg') }}')"></div>
-                            <div class="room-price">$299/night</div>
+                            <div class="room-price">$45/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Standerd Room</h4>
@@ -206,7 +206,7 @@
                     <div class="card room-card">
                         <div class="position-relative">
                             <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room2.jpg') }}')"></div>
-                            <div class="room-price">$499/night</div>
+                            <div class="room-price">$45/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Standerd Room</h4>
@@ -226,7 +226,7 @@
                     <div class="card room-card">
                         <div class="position-relative">
                             <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room3.jpg') }}')"></div>
-                            <div class="room-price">$899/night</div>
+                            <div class="room-price">$45/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Standerd Room</h4>

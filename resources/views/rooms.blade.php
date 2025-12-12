@@ -39,7 +39,7 @@
                             <h3 class="text-white">Standerd Room</h3>
                             <p class="text-white">Elegant accommodations with premium amenities and stunning city views.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="text-gold fw-bold">From $299/night</span>
+                                <span class="text-gold fw-bold">From $45/night</span>
                                   <button data-room="1" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                             <h3 class="text-white">Standerd Room</h3>
                             <p class="text-white">Spacious suites with separate living areas and exclusive lounge access.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="text-gold fw-bold">From $499/night</span>
+                                <span class="text-gold fw-bold">From $45/night</span>
                                 <button data-room="2" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                             <h3 class="text-white">Standerd Room</h3>
                             <p class="text-white">The ultimate luxury experience with panoramic views and butler service.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="text-gold fw-bold">From $899/night</span>
+                                <span class="text-gold fw-bold">From $45/night</span>
                                   <button data-room="3" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
