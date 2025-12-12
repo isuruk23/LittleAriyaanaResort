@@ -1509,7 +1509,7 @@
         }
         
         .carousel-caption {
-            bottom: 50px;
+            /* bottom: 50px; */
             left: 50px;
             right: auto;
             text-align: left;

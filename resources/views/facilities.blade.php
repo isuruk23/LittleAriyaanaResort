@@ -91,7 +91,7 @@
                     <div class="card facility-card fade-in">
                         <div class="facility-image" style="background-image: url('{{ asset('public/images/facilities/wifi.jpg') }}')"></div>
                         <div class="card-body p-4">
-                            <i class="bi bi-router-fill facility-icon"></i>
+                            <i class="bi bi-wifi facility-icon"></i>
                             <h4 class="card-title">Wi-Fi</h4>
                             <p class="card-text">Stay connected with complimentary high-speed Wi-Fi available throughout your room and property for smooth browsing, streaming, and working.</p>
                             <!-- <a href="#" class="text-gold text-decoration-none">View Gallery</a> -->

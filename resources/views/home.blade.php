@@ -17,12 +17,12 @@
                     </h1>
                     <p class="lead text-white mb-4">Discover a sanctuary of sophistication where every detail is crafted for your comfort.</p>
                     <div class="d-flex flex-wrap gap-3 justify-content-center">
-                        <button class="btn btn-gold">Explore Suites</button>
-                        <button class="btn btn-outline-gold">View Experiences</button>
+                        <a href="/rooms" class="btn btn-gold">Explore Room</a>
+                        <a href="/facilities" class="btn btn-outline-gold">View Facilities</a>
                     </div>
                     
                     <!-- Booking Bar -->
-                    <div class="booking-bar">
+                    <!-- <div class="booking-bar">
                         <div class="row g-3 align-items-center">
                             <div class="col-md-3">
                                 <label class="form-label">Check In</label>
@@ -53,7 +53,7 @@
                                 <button class="btn btn-gold mt-4">Check Availability</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="carousel-item" style="background-image: url('{{ asset('public/images/slider/bg2.jpg') }}')">
@@ -64,12 +64,12 @@
                     </h1>
                     <p class="lead text-white mb-4">Rejuvenate your senses with our exclusive treatments and wellness programs.</p>
                     <div class="d-flex flex-wrap gap-3 justify-content-center">
-                        <button class="btn btn-gold">View Spa Services</button>
-                        <button class="btn btn-outline-gold">Book Treatment</button>
+                        <a href="/rooms" class="btn btn-gold">Explore Room</a>
+                        <a href="/facilities" class="btn btn-outline-gold">View Facilities</a>
                     </div>
                     
                     <!-- Booking Bar -->
-                    <div class="booking-bar">
+                    <!-- <div class="booking-bar">
                         <div class="row g-3 align-items-center">
                             <div class="col-md-3">
                                 <label class="form-label">Check In</label>
@@ -100,7 +100,7 @@
                                 <button class="btn btn-gold mt-4">Check Availability</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="carousel-item" style="background-image: url('{{ asset('public/images/slider/bg3.jpg') }}')">
@@ -111,12 +111,12 @@
                     </h1>
                     <p class="lead text-white mb-4">Rejuvenate your senses with our exclusive treatments and wellness programs.</p>
                     <div class="d-flex flex-wrap gap-3 justify-content-center">
-                        <button class="btn btn-gold">View Spa Services</button>
-                        <button class="btn btn-outline-gold">Book Treatment</button>
+                        <a href="/rooms" class="btn btn-gold">Explore Room</a>
+                        <a href="/facilities" class="btn btn-outline-gold">View Facilities</a>
                     </div>
                     
                     <!-- Booking Bar -->
-                    <div class="booking-bar">
+                    <!-- <div class="booking-bar">
                         <div class="row g-3 align-items-center">
                             <div class="col-md-3">
                                 <label class="form-label">Check In</label>
@@ -147,7 +147,7 @@
                                 <button class="btn btn-gold mt-4">Check Availability</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -192,11 +192,13 @@
                             <h4 class="card-title">Standerd Room</h4>
                             <p class="card-text">Elegantly appointed rooms with premium amenities and stunning city views.</p>
                             <div class="mb-3">
-                                <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> Free WiFi</small>
-                                <small class="text-muted ms-3"><i class="bi bi-cup-straw amenity-icon"></i> Mini Bar</small>
+                                <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> WiFi</small>
+                                <small class="text-muted ms-3"><i class="bi bi-tv amenity-icon"></i> TV</small>
+                                <small class="text-muted ms-3"><i class="bi bi-snow amenity-icon"></i> AC</small>
+                                <small class="text-muted ms-3"><i class="bi bi-water amenity-icon"></i> Mini Pool</small>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a href="#" class="text-gold text-decoration-none">View Details</a>
+                                <a href="/rooms" class="text-gold text-decoration-none">View Details</a>
                                 <button data-room="1" class="btn btn-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
@@ -212,11 +214,13 @@
                             <h4 class="card-title">Standerd Room</h4>
                             <p class="card-text">Spacious suites with separate living areas and exclusive access to our club lounge.</p>
                             <div class="mb-3">
-                                <small class="text-muted"><i class="bi bi-tv amenity-icon"></i> Smart TV</small>
-                                <small class="text-muted ms-3"><i class="bi bi-cup-straw amenity-icon"></i> Mini Bar</small>
+                                <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> WiFi</small>
+                                <small class="text-muted ms-3"><i class="bi bi-tv amenity-icon"></i> TV</small>
+                                <small class="text-muted ms-3"><i class="bi bi-snow amenity-icon"></i> AC</small>
+                                <small class="text-muted ms-3"><i class="bi bi-water amenity-icon"></i> Mini Pool</small>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a href="#" class="text-gold text-decoration-none">View Details</a>
+                                <a href="/rooms" class="text-gold text-decoration-none">View Details</a>
                                 <button  data-room="2" class="btn btn-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
@@ -232,11 +236,13 @@
                             <h4 class="card-title">Standerd Room</h4>
                             <p class="card-text">The epitome of luxury with panoramic views, private terrace, and dedicated butler service.</p>
                             <div class="mb-3">
-                                <small class="text-muted"><i class="bi bi-hotspot amenity-icon"></i> Private Jacuzzi</small>
-                                <small class="text-muted ms-3"><i class="bi bi-person-check amenity-icon"></i> Butler Service</small>
+                                <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> WiFi</small>
+                                <small class="text-muted ms-3"><i class="bi bi-tv amenity-icon"></i> TV</small>
+                                <small class="text-muted ms-3"><i class="bi bi-snow amenity-icon"></i> AC</small>
+                                <small class="text-muted ms-3"><i class="bi bi-water amenity-icon"></i> Mini Pool</small>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a href="#" class="text-gold text-decoration-none">View Details</a>
+                                <a href="/rooms" class="text-gold text-decoration-none">View Details</a>
                                 <button data-room="3" class="btn btn-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
