@@ -7,30 +7,30 @@ use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\UserDashboardController;
 
 
-// Route::get('/', function () {
-//     return view('home');
-// });
-// Route::get('/about', function () {
-//     return view('about');
-// });
-// Route::get('/rooms', function () {
-//     return view('rooms');
-// });
-// Route::get('/facilities', function () {
-//     return view('facilities');
-// });
-// Route::get('/gallery', function () {
-//     return view('gallery');
-// });
-// Route::get('/contact', function () {
-//     return view('contact');
-// });
+Route::get('/', function () {
+    return view('home');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/rooms', function () {
+    return view('rooms');
+});
+Route::get('/facilities', function () {
+    return view('facilities');
+});
+Route::get('/gallery', function () {
+    return view('gallery');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
 
-// Route::post('/booking/book', [BookingController::class, 'book'])->name('booking.book');
+Route::post('/booking/book', [BookingController::class, 'book'])->name('booking.book');
 
-// Auth::routes();
+Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 // Only admin can access
