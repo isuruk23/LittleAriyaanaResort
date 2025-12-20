@@ -53,3 +53,8 @@ Route::middleware(['auth'])->group(function(){
 
 });
 
+
+  $sitemap->writeToFile(public_path('sitemap.xml'));
+
+    return response()->file(public_path('sitemap.xml'));
+
