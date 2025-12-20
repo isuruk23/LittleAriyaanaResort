@@ -39,7 +39,7 @@
                             <h3 class="text-white">Standerd Room</h3>
                             <p class="text-white">Elegant accommodations with premium amenities and stunning city views.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="text-gold fw-bold">From $55/night</span>
+                                <span class="text-gold fw-bold">From USD 55 pp/night</span>
                                   <button data-room="1" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>

@@ -139,7 +139,7 @@
                     <div class="card room-card">
                         <div class="position-relative">
                             <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/room1.jpg') }}')"></div>
-                            <div class="room-price">$45/night</div>
+                            <div class="room-price">From USD 55 pp/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Standerd Room</h4>
