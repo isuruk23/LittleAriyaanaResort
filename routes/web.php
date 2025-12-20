@@ -7,6 +7,10 @@ use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\UserDashboardController;
 
 
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\Tags\Url;
+
+
 Route::get('/', function () {
     return view('home');
 });
@@ -54,7 +58,26 @@ Route::middleware(['auth'])->group(function(){
 });
 
 
-  $sitemap->writeToFile(public_path('sitemap.xml'));
+
+ Route::get('/sitemap.xml', function () {
+
+    $sitemap = Sitemap::create()
+        ->add(Url::create('/')
+            ->setPriority(1.0)
+            ->setChangeFrequency('daily')
+        )
+        ->add(Url::create('/about'))
+        ->add(Url::create('/rooms'))
+        ->add(Url::create('/facilities'))
+        ->add(Url::create('/gallery'))
+        ->add(Url::create('/contact'));
+
+    // Dynamic pages example
+    // foreach (App\Models\Post::all() as $post) {
+    //     $sitemap->add(Url::create("/post/{$post->slug}"));
+    // }
+
+    $sitemap->writeToFile(public_path('sitemap.xml'));
 
     return response()->file(public_path('sitemap.xml'));
-
+});
