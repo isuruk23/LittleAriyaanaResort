@@ -186,7 +186,7 @@
                     <div class="card room-card">
                         <div class="position-relative">
                             <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room1.jpg') }}')"></div>
-                            <div class="room-price">$45/night</div>
+                            <div class="room-price">$35/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Standerd Room</h4>
@@ -208,7 +208,7 @@
                     <div class="card room-card">
                         <div class="position-relative">
                             <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room2.jpg') }}')"></div>
-                            <div class="room-price">$45/night</div>
+                            <div class="room-price">$35/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Standerd Room</h4>
@@ -230,7 +230,7 @@
                     <div class="card room-card">
                         <div class="position-relative">
                             <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room3.jpg') }}')"></div>
-                            <div class="room-price">$45/night</div>
+                            <div class="room-price">$35/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Standerd Room</h4>
@@ -470,7 +470,7 @@
                         <!-- Placeholder for map - in a real implementation, you would embed a Google Map or similar -->
                         <div style="height: 400px; background-color: #eee; display: flex; align-items: center; justify-content: center;">
                             <div class="text-center">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7931.450758704008!2d80.03506469967765!3d6.299771036350433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e9!4m3!3m2!1d6.8593549!2d79.8638084!4m5!1s0x3ae181f829f1723b%3A0xc6fe9b019f809b93!2sDream&#39;s%20Tree%20Ayurveda%20Villa%20Ahungalla!3m2!1d6.299994!2d80.042703!5e0!3m2!1sen!2slk!4v1765159010354!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7931.350758704008!2d80.03506469967765!3d6.299771036350433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e9!4m3!3m2!1d6.8593549!2d79.8638084!4m5!1s0x3ae181f829f1723b%3A0xc6fe9b019f809b93!2sDream&#39;s%20Tree%20Ayurveda%20Villa%20Ahungalla!3m2!1d6.299994!2d80.042703!5e0!3m2!1sen!2slk!4v1765159010354!5m2!1sen!2slk" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
