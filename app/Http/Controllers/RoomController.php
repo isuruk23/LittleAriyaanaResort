@@ -32,14 +32,29 @@ class RoomController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
+            'intro' => 'required|string|max:255',
+            'price' => 'required|max:255',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
+         $imagePath = null;
+
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('rooms', 'public');
+        }
+        
 
         if($request->room_id) {
             // Update existing room
             // dd($request);
             $room = Room::findOrFail($request->room_id);
+            if ($imagePath && $room->image) {
+                Storage::disk('public')->delete($room->image);
+            }
             $room->update([
                 'name' => $request->name,
+                'intro' => $request->intro,
+                'price' => $request->price,
+                'image'     => $imagePath ?? $room->image,
                 'is_active' => $request->has('is_active') ? 1 : 0,
             ]);
             return redirect()->back()->with('success','Room updated successfully');
@@ -48,6 +63,9 @@ class RoomController extends Controller
         // Create new room
         Room::create([
             'name' => $request->name,
+            'intro' => $request->intro,
+            'price' => $request->price,
+            'image'     => $imagePath,
             'is_active' => $request->is_active ? 1 : 0,
         ]);
 

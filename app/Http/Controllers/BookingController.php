@@ -111,6 +111,10 @@ public function book(Request $request)
             'status' => 'required',
         ]);
 
+    $check_in = Carbon::parse($request->check_in)->setTime(14,0,0);
+    $check_out = Carbon::parse($request->check_out)->setTime(14,0,0);
+        
+
         if($request->booking_id){
             // Update booking
             $booking = Booking::findOrFail($request->booking_id);
@@ -118,9 +122,9 @@ public function book(Request $request)
                 'name' => $request->name,
                 'email' => $request->email,
                 'phone' => $request->phone,
+                'check_in' => $check_in,
+                'check_out' => $check_out,
                 'room_no' => $request->room_no,
-                'check_in' => $request->check_in,
-                'check_out' => $request->check_out,
                 'status' => $request->status,
             ]);
             return redirect()->back()->with('success','Booking updated successfully');
@@ -132,8 +136,8 @@ public function book(Request $request)
             'email' => $request->email,
             'phone' => $request->phone,
             'room_no' => $request->room_no,
-            'check_in' => $request->check_in,
-            'check_out' => $request->check_out,
+            'check_in' => $check_in,
+            'check_out' => $check_out,
             'status' => $request->status,
         ]);
 

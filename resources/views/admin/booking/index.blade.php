@@ -132,10 +132,9 @@ editButtons.forEach(btn => {
         email.value = btn.dataset.email;
         phone.value = btn.dataset.phone;
         room_no.value = btn.dataset.room_no;
-        check_in.value = btn.dataset.check_in;
-        check_out.value = btn.dataset.check_out;
+        check_in.value = formatDate(btn.dataset.check_in);
+        check_out.value = formatDate(btn.dataset.check_out);
         status.value = btn.dataset.status;
-
         formTitle.innerText = 'Edit Booking';
         submitBtn.innerText = 'Update Booking';
         cancelBtn.style.display = 'inline-block';
@@ -143,6 +142,11 @@ editButtons.forEach(btn => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+
+function formatDate(dateStr) {
+    const date = new Date(dateStr);
+    return date.toISOString().split('T')[0]; // YYYY-MM-DD
+}
 
 cancelBtn.addEventListener('click', () => {
     formTitle.innerText = 'Add Booking';

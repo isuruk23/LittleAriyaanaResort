@@ -15,11 +15,20 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-6">
-            <form action="{{ route('rooms.store') }}" method="POST" id="room-form">
+            <form action="{{ route('rooms.store') }}" method="POST" id="room-form" enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="room_id" id="room_id">
                 <div class="mb-3">
                     <input type="text" name="name" id="name" class="form-control" placeholder="Room Name" required>
+                </div>
+                 <div class="mb-3">
+                    <input type="text" name="intro" id="intro" class="form-control" placeholder="Room intro" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" name="price" id="price" class="form-control" placeholder="Room price" required>
+                </div>
+                <div class="mb-3">
+                    <input type="file" name="image" id="image" class="form-control" placeholder="Room image" required>
                 </div>
                 <div class="form-check mb-3">
                     <input type="checkbox" name="is_active" id="is_active" class="form-check-input" checked>
@@ -36,6 +45,8 @@
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
+                        <th>Price</th>
+                        <th>Image</th>
                         <th>Active</th>
                         <th>Actions</th>
                     </tr>
@@ -45,11 +56,17 @@
                     <tr>
                         <td>{{ $room->id }}</td>
                         <td>{{ $room->name }}</td>
+                        <td>${{ $room->price }}</td>
+                        <td>@if($room->image)
+                            <img src="{{ asset('storage/'.$room->image) }}" width="120">
+                            @endif
+                        </td>
                         <td>{{ $room->is_active ? 'Yes' : 'No' }}</td>
                         <td>
                             <button class="btn btn-sm btn-success edit-btn" 
                                 data-id="{{ $room->id }}" 
                                 data-name="{{ $room->name }}" 
+                                data-price="{{ $room->price }}" 
                                 data-active="{{ $room->is_active }}">Edit</button>
 
                             <a href="{{ route('rooms.destroy', $room->id) }}" 
@@ -76,12 +93,16 @@
     const cancelBtn = document.getElementById('cancel-btn');
     const roomIdInput = document.getElementById('room_id');
     const nameInput = document.getElementById('name');
+    const introInput = document.getElementById('intro');
+    const priceInput = document.getElementById('price');
     const isActiveInput = document.getElementById('is_active');
 
     editButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const id = btn.dataset.id;
             const name = btn.dataset.name;
+            const intro = btn.dataset.intro;
+            const price = btn.dataset.price;
             const active = btn.dataset.active;
 
             formTitle.innerText = 'Edit Room';
@@ -90,6 +111,8 @@
 
             roomIdInput.value = id;
             nameInput.value = name;
+            introInput.value = intro;
+            priceInput.value = price;
             isActiveInput.checked = active == 1 ? true : false;
 
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -102,6 +125,8 @@
         cancelBtn.style.display = 'none';
         roomIdInput.value = '';
         nameInput.value = '';
+        introInput.value = '';
+        priceInput.value = '';
         isActiveInput.checked = true;
     });
 </script>
