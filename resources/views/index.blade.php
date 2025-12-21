@@ -139,7 +139,7 @@
                     <div class="card room-card">
                         <div class="position-relative">
                             <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/room1.jpg') }}')"></div>
-                            <div class="room-price">From USD 55 pp/night</div>
+                            <div class="room-price">From USD 35 pp/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Standerd Room</h4>
@@ -159,7 +159,7 @@
                     <div class="card room-card">
                         <div class="position-relative">
                             <div class="room-image" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                            <div class="room-price">From USD 55 pp/night</div>
+                            <div class="room-price">From USD 35 pp/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Executive Suite</h4>
@@ -179,7 +179,7 @@
                     <div class="card room-card">
                         <div class="position-relative">
                             <div class="room-image" style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
-                            <div class="room-price">From USD 55 pp/night</div>
+                            <div class="room-price">From USD 35 pp/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Presidential Suite</h4>
