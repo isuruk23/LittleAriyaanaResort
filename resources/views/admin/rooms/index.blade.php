@@ -8,6 +8,10 @@
     @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
+    
+   @if(session('warning'))
+        <div class="alert alert-warning"> {{ session('warning') }}</div>
+    @endif
 
     <!-- Add/Edit Form -->
     <div class="card mb-4">
@@ -31,7 +35,7 @@
                     <input type="file" name="image" id="image" class="form-control" placeholder="Room image" required>
                 </div>
                 <div class="form-check mb-3">
-                    <input type="checkbox" name="is_active" id="is_active" class="form-check-input" checked>
+                    <input type="checkbox" name="status" id="status" class="form-check-input" checked>
                     <label class="form-check-label">Active</label>
                 </div>
                 <button class="btn btn-primary" type="submit" id="submit-btn">Add Room</button>

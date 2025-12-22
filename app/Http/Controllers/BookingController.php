@@ -113,6 +113,21 @@ public function book(Request $request)
 
     $check_in = Carbon::parse($request->check_in)->setTime(14,0,0);
     $check_out = Carbon::parse($request->check_out)->setTime(14,0,0);
+
+    $room_id = $request->room_no;
+
+    // Check availability
+    $overlap = Booking::where('room_no', $room_id)
+    ->whereIn('status', [1]) // only pending or confirmed
+    ->where(function($q) use ($check_in, $check_out) {
+        $q->where('check_in', '<', $check_out)
+          ->where('check_out', '>', $check_in);
+    })
+    ->exists();
+
+    if ($overlap) {       
+        return redirect()->back()->with('success','Selected room is not available for the given dates!');
+    }
         
 
         if($request->booking_id){
