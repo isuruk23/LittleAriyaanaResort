@@ -10,12 +10,12 @@ class PageController extends Controller
 {
     public function index()
     {
-        $rooms = Room::where('is_active', 'active')->get();
+        $rooms = Room::where('is_active', '1')->get();
         return view('home', compact('rooms'));
     }
     public function rooms()
     {
-        $rooms = Room::where('is_active', 'active')->get();
+        $rooms = Room::where('is_active', '1')->get();
         return view('rooms', compact('rooms'));
     }
 
