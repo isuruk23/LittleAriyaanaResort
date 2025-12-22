@@ -32,46 +32,24 @@
                 </div>
             </div>
             <div class="row">
+                @foreach($rooms as $room)
                 <div class="col-lg-6">
                     <div class="category-card fade-in">
-                        <div class="category-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room1.jpg') }}')"></div>
+                        @if($room->image)
+                            <div class="category-image" style="background-image: url('{{ asset('public/'.$room->image) }}')"></div>
+                        @endif
+                        
                         <div class="category-content">
-                            <h3 class="text-white">Standerd Room</h3>
-                            <p class="text-white">Elegant accommodations with premium amenities and stunning city views.</p>
+                            <h3 class="text-white">{{ $room->name }}</h3>
+                            <p class="text-white">{{ $room->intro }}</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="text-gold fw-bold">From USD 35 pp/night</span>
+                                <span class="text-gold fw-bold">From USD {{ $room->price }} pp/night</span>
                                   <button data-room="1" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="category-card fade-in">
-                        <div class="category-badge">Most Popular</div>
-                        <div class="category-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room2.jpg') }}')"></div>
-                        <div class="category-content">
-                            <h3 class="text-white">Standerd Room</h3>
-                            <p class="text-white">Spacious suites with separate living areas and exclusive lounge access.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="text-gold fw-bold">From USD 35 pp/night </span>
-                                <button data-room="2" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="category-card fade-in">
-                        <div class="category-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room3.jpg') }}')"></div>
-                        <div class="category-content">
-                            <h3 class="text-white">Standerd Room</h3>
-                            <p class="text-white">The ultimate luxury experience with panoramic views and butler service.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="text-gold fw-bold">From USD 35 pp/night</span>
-                                  <button data-room="3" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
                 
             </div>
         </div>

@@ -39,16 +39,26 @@ class RoomController extends Controller
          $imagePath = null;
 
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('rooms', 'public');
-        }
+        $image = $request->file('image');
+        // create unique filename
+        $filename = time().'_'.$image->getClientOriginalName();
+        // move to public/rooms
+        $image->move(public_path('rooms'), $filename);
+        // save path for DB
+        $imagePath = 'rooms/'.$filename;
+    }
+
+        
+        
+        
         
 
         if($request->room_id) {
             // Update existing room
             // dd($request);
             $room = Room::findOrFail($request->room_id);
-            if ($imagePath && $room->image) {
-                Storage::disk('public')->delete($room->image);
+            if ($imagePath && $room->image && file_exists(public_path($room->image))) {
+                unlink(public_path($room->image));
             }
             $room->update([
                 'name' => $request->name,

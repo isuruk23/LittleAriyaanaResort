@@ -5,6 +5,7 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\UserDashboardController;
+use App\Http\Controllers\PageController;
 
 
 use Spatie\Sitemap\Sitemap;
@@ -17,9 +18,11 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/rooms', function () {
-    return view('rooms');
-});
+// Route::get('/rooms', function () {
+//     return view('rooms');
+// });
+Route::get('/rooms', [PageController::class, 'rooms'])->name('rooms');
+
 Route::get('/facilities', function () {
     return view('facilities');
 });

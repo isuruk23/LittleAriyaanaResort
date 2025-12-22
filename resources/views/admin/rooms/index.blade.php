@@ -58,7 +58,7 @@
                         <td>{{ $room->name }}</td>
                         <td>${{ $room->price }}</td>
                         <td>@if($room->image)
-                            <img src="{{ asset('storage/'.$room->image) }}" width="120">
+                            <img src="{{ asset('public/'.$room->image) }}" width="120">
                             @endif
                         </td>
                         <td>{{ $room->is_active ? 'Yes' : 'No' }}</td>
