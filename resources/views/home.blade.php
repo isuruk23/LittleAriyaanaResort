@@ -182,15 +182,19 @@
                 </div>
             </div>
             <div class="row g-4">
+                @foreach($rooms as $room)
                 <div class="col-lg-4 col-md-6">
                     <div class="card room-card">
                         <div class="position-relative">
-                            <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room1.jpg') }}')"></div>
-                            <div class="room-price">$35/night</div>
+                             @if($room->image)
+                            <div class="room-image" style="background-image: url('{{ asset('public/'.$room->image) }}')"></div>
+                            @endif
+                            
+                            <div class="room-price">${{ $room->price }}/night</div>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">Standerd Room</h4>
-                            <p class="card-text">Elegantly appointed rooms with premium amenities and stunning city views.</p>
+                            <p class="card-text">{{ $room->intro }}</p>
                             <div class="mb-3">
                                 <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> WiFi</small>
                                 <small class="text-muted ms-3"><i class="bi bi-tv amenity-icon"></i> TV</small>
@@ -199,55 +203,13 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="/rooms" class="text-gold text-decoration-none">View Details</a>
-                                <button data-room="1" class="btn btn-gold btn-sm roomBtn" >Book Now</button>
+                                <button data-room="{{ $room->id }}" class="btn btn-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card room-card">
-                        <div class="position-relative">
-                            <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room2.jpg') }}')"></div>
-                            <div class="room-price">$35/night</div>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Standerd Room</h4>
-                            <p class="card-text">Spacious suites with separate living areas and exclusive access to our club lounge.</p>
-                            <div class="mb-3">
-                                <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> WiFi</small>
-                                <small class="text-muted ms-3"><i class="bi bi-tv amenity-icon"></i> TV</small>
-                                <small class="text-muted ms-3"><i class="bi bi-snow amenity-icon"></i> AC</small>
-                                <small class="text-muted ms-3"><i class="bi bi-water amenity-icon"></i> Mini Pool</small>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a href="/rooms" class="text-gold text-decoration-none">View Details</a>
-                                <button  data-room="2" class="btn btn-gold btn-sm roomBtn" >Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card room-card">
-                        <div class="position-relative">
-                            <div class="room-image" style="background-image: url('{{ asset('public/images/rooms/standerd_room3.jpg') }}')"></div>
-                            <div class="room-price">$35/night</div>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Standerd Room</h4>
-                            <p class="card-text">The epitome of luxury with panoramic views, private terrace, and dedicated butler service.</p>
-                            <div class="mb-3">
-                                <small class="text-muted"><i class="bi bi-wifi amenity-icon"></i> WiFi</small>
-                                <small class="text-muted ms-3"><i class="bi bi-tv amenity-icon"></i> TV</small>
-                                <small class="text-muted ms-3"><i class="bi bi-snow amenity-icon"></i> AC</small>
-                                <small class="text-muted ms-3"><i class="bi bi-water amenity-icon"></i> Mini Pool</small>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a href="/rooms" class="text-gold text-decoration-none">View Details</a>
-                                <button data-room="3" class="btn btn-gold btn-sm roomBtn" >Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+                
             </div>
         </div>
     </section>

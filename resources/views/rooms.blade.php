@@ -44,7 +44,7 @@
                             <p class="text-white">{{ $room->intro }}</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="text-gold fw-bold">From USD {{ $room->price }} pp/night</span>
-                                  <button data-room="1" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
+                                  <button data-room="{{ $room->id }}" class="btn btn-outline-gold btn-sm roomBtn" >Book Now</button>
                             </div>
                         </div>
                     </div>

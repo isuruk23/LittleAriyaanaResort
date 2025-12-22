@@ -12,9 +12,11 @@ use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+Route::get('/', [PageController::class, 'index'])->name('home');
+
 Route::get('/about', function () {
     return view('about');
 });
