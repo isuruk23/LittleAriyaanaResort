@@ -2,14 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="
-
-Our Story of Luxury and Comfort
-
-For nearly a century, we've been crafting unforgettable experiences where timeless elegance meets modern sophistication.
-Our Heritage
-
-This accommodation, located in Balapitiya and situated less than 1 km from Ahungalla Beach, provides a serene retreat focused on wellness and comfort. Guests can enjoy a wide array of amenities, including a garden, free private parking, a restaurant, and a full spa and wellness centre featuring a sauna. ">
+    <meta name="description" content="Our Story of Luxury and Comfort For nearly a century, we've been crafting unforgettable experiences where timeless elegance meets modern sophistication. Our Heritage This accommodation, located in Balapitiya and situated less than 1 km from Ahungalla Beach, provides a serene retreat focused on wellness and comfort. Guests can enjoy a wide array of amenities, including a garden, free private parking, a restaurant, and a full spa and wellness centre featuring a sauna. ">
     <meta name="keywords" content="Little Ariyaana Resort, Little Ariyaana Resort Balapitya, Balapitya Resort, Balapitya Stay, Balapitiya hotel, Resort in Balapitiya,Little Ariyaana Resort Sri Lanka,Family resort Balapitiya,Hotels in Balapitiya Sri Lanka,Balapitiya accommodation">
     <meta name="author" content="Little Ariyaana Resort">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
